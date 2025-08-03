@@ -23,6 +23,15 @@ interface BlogPostPageProps {
   }>
 }
 
+export async function generateStaticParams() {
+  // Fetch all blog post IDs from your data source (e.g., API, database)
+  const posts = await fetch('https://your-api.com/posts').then((res) => res.json());
+
+  return posts.map((post: { id: { toString: () => any } }) => ({
+    id: post.id.toString(), // Ensure 'id' matches your dynamic segment
+  }));
+}
+
 export default function BlogPostPage({ params }: BlogPostPageProps) {
   const unwrappedParams = React.use(params)
   const post = blogPosts.find((p) => p.id === Number.parseInt(unwrappedParams.id))
