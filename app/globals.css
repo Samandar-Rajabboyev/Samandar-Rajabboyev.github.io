@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 240 245 249;
+    --foreground: 30 32 34;
+    --card: 240 245 249;
+    --card-foreground: 30 32 34;
+    --popover: 240 245 249;
+    --popover-foreground: 30 32 34;
+    --primary: 30 32 34;
+    --primary-foreground: 240 245 249;
+    --secondary: 201 214 223;
+    --secondary-foreground: 30 32 34;
+    --muted: 201 214 223;
+    --muted-foreground: 82 97 107;
+    --accent: 201 214 223;
+    --accent-foreground: 30 32 34;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 240 245 249;
+    --border: 201 214 223;
+    --input: 201 214 223;
+    --ring: 30 32 34;
+    --chart-1: 82 97 107;
+    --chart-2: 201 214 223;
+    --chart-3: 30 32 34;
+    --chart-4: 240 245 249;
+    --chart-5: 82 97 107;
+    --radius: 0.5rem;
+    --sidebar-background: 240 245 249;
+    --sidebar-foreground: 82 97 107;
+    --sidebar-primary: 30 32 34;
+    --sidebar-primary-foreground: 240 245 249;
+    --sidebar-accent: 201 214 223;
+    --sidebar-accent-foreground: 30 32 34;
+    --sidebar-border: 201 214 223;
+    --sidebar-ring: 30 32 34;
+  }
+  .dark {
+    --background: 30 32 34;
+    --foreground: 240 245 249;
+    --card: 30 32 34;
+    --card-foreground: 240 245 249;
+    --popover: 30 32 34;
+    --popover-foreground: 240 245 249;
+    --primary: 240 245 249;
+    --primary-foreground: 30 32 34;
+    --secondary: 82 97 107;
+    --secondary-foreground: 240 245 249;
+    --muted: 82 97 107;
+    --muted-foreground: 201 214 223;
+    --accent: 82 97 107;
+    --accent-foreground: 240 245 249;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 240 245 249;
+    --border: 82 97 107;
+    --input: 82 97 107;
+    --ring: 201 214 223;
+    --chart-1: 201 214 223;
+    --chart-2: 82 97 107;
+    --chart-3: 240 245 249;
+    --chart-4: 30 32 34;
+    --chart-5: 201 214 223;
+    --sidebar-background: 30 32 34;
+    --sidebar-foreground: 201 214 223;
+    --sidebar-primary: 240 245 249;
+    --sidebar-primary-foreground: 30 32 34;
+    --sidebar-accent: 82 97 107;
+    --sidebar-accent-foreground: 240 245 249;
+    --sidebar-border: 82 97 107;
+    --sidebar-ring: 201 214 223;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-color: rgb(240, 245, 249); /* #F0F5F9 for light mode */
+  }
+  
+  .dark body {
+    background-color: rgb(30, 32, 34); /* #1E2022 for dark mode */
+  }
+}
