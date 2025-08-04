@@ -17,6 +17,8 @@ import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import rehypeRaw from "rehype-raw"
 
+// todo: I need to make this page markdown converter, so we should keep static md files
+
 interface BlogPostPageProps {
   params: Promise<{
     id: string
