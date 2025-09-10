@@ -26,7 +26,7 @@ Software Engineer with over 3.5 years of experience in mobile development, speci
 - Assisted and supported mobile team members and cross-functional teams
 - Provided technical support and troubleshooting for existing applications
 
-**Key Products Worked On:** iWatt, road24, GoInvest, KWatt, EBB, Mustang, Urban Power, Avto24
+**Key Products Worked On:** iWatt, road24, GoInvest, KWatt, EBB, Mustang, Urban Power, Avto24, HGT
 
 ### Flutter Developer | SOFTEX
 **Sep 2021 - Mar 2024**
